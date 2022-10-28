@@ -1,0 +1,117 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.team {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &.preloader-mode {
+    gap: 0;
+  }
+  
+  .member {
+    display: flex;
+    gap: 15px;
+    // background-color: #cccccc36;
+    // padding: 15px;
+    // border-radius: 10px;
+
+    .profile-image {
+      img {
+        height: auto;
+        max-width: 130px;
+        border-radius: 10px;
+        box-shadow: -3px -3px 7px #f2f2f2, 3px 3px 7px #c0c9d2;
+      }
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+
+      .name {
+        font-size: 1.7em;
+        font-family: 'Bold';
+      }
+
+      .job-title {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px;
+
+        span {
+          border: 1px solid $appColor;
+          color: $appColor;
+          border-radius: 2px;
+          font-size: 0.9em;
+          padding: 2px 6px;
+        }
+      }
+
+      .description {
+        font-size: 0.9em;
+
+        .toggle-info {
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: $appColor;
+          font-family: 'Bold';
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .team {
+    .member {
+      .profile-info {
+        .name {
+          font-size: 1.4em;
+        }
+
+        .job-title {
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .team {
+    .member {
+      @include flex-column;
+
+      .profile-info {
+        @include flex-column;
+
+        .name {
+          text-align: center;
+        }
+
+        .job-title {
+          justify-content: center;
+
+          span {
+            font-size: 0.8em;
+            text-align: center;
+          }
+        }
+
+        .description {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
