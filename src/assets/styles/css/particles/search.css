@@ -1,12 +1,12 @@
 .page-search {
-  border: 1px solid #ccc;
   border-radius: 5px;
   margin: 0 auto;
   max-width: 350px;
   min-height: 40px;
   overflow: hidden;
-  padding: 0 4px;
+  padding: 1px 4px;
   min-width: 360px;
+  background-color: #f2f4f6;
   display: flex;
   gap: 5px;
 }
@@ -18,9 +18,9 @@
   background-repeat: no-repeat;
   background-size: 19px;
   background-position: left;
-  font-family: "Bold";
   background-position-x: 6px;
-  font-size: 1em;
+  font-size: 15px;
+  background-color: inherit;
 }
 .page-search input::placeholder {
   color: rgba(102, 102, 102, 0.8392156863);
@@ -46,6 +46,7 @@
   font-size: 1em;
   font-family: "Bold";
   transition: 0.4s;
+  color: rgba(68, 68, 68, 0.7019607843);
 }
 .page-search button:hover {
   color: #0082C7;
@@ -53,7 +54,8 @@
 
 @media (max-width: 490px) {
   .page-search {
-    min-width: 260px;
+    min-width: calc(100% - 8px);
+    max-width: calc(100% - 8px);
   }
   .page-search input::placeholder {
     font-size: 0.9em;

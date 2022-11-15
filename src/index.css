@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Regular', Arial;
-  color: #413f42db;
+  color: #141314fa;
 }
 
 html,
@@ -55,4 +55,11 @@ button {
 
 ul li {
   list-style-type: none;
+}
+
+@media (max-width: 490px) {
+  .container {
+    width: calc(100% - 40px);
+    padding: 0 20px;
+  }
 }

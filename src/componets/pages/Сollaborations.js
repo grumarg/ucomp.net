@@ -14,8 +14,6 @@ function Collaborations() {
   const [collaborations, setCollaborations] = useState([])
   const [preloader, setPreloader] = useState(true)
 
-  const email = 'info@ucomp.net'
-
   useEffect(() => {
     const getCollaborations = () => {
       const url = `${process.env.REACT_APP_SERVER_DATA}/collaboration/get`
@@ -120,9 +118,9 @@ function Collaborations() {
               collaborations.map((info, index) => {
                 return (
                   <section key={index} className='information-block'>
-                    <h3 className='title-medium'>
+                    <h3 className='title-medium' onClick={() => toggleInfo(index)}>
                       {info.title}
-                      <button className='toggle-info' onClick={() => toggleInfo(index)}>
+                      <button className='toggle-info'>
                         { info.active ? '-' : '+' }
                       </button>
                     </h3>
