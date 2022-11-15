@@ -11,12 +11,12 @@
 }
 .main-header .cover {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .main-header .cover {
     min-width: auto;
   }

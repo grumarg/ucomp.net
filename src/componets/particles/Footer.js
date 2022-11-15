@@ -16,10 +16,7 @@ function Footer() {
 
       <article className='cover'>
         <section className='info'>
-          <h3>urban complexity lab</h3>
-          <span className='description'>
-            Built using React by <span className='line'>SOCOS Team</span> &copy;{year}
-          </span>
+          <h4>urban complexity lab</h4>
           <ul>
             <li>
               <a href={`mailto:${email}`}>
@@ -46,6 +43,14 @@ function Footer() {
       <article className='map'>
         <GoogleMap />
       </article> 
+      
+      <hr />
+
+      <article>
+        <span className='description'>
+          Built using React by <span className='line'>SOCOS Team</span> &copy;{year}
+        </span>
+      </article>
     </footer>
   );
 }
