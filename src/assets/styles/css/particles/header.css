@@ -33,10 +33,11 @@
   list-style-type: none;
 }
 .main-header .cover ul li a {
-  color: rgba(20, 19, 20, 0.9803921569);
+  color: rgba(6, 5, 6, 0.768627451);
   user-select: none;
   text-transform: capitalize;
   font-family: "Medium";
+  color: #444;
 }
 .main-header .cover ul li a:hover {
   color: #0082C7;
@@ -102,7 +103,7 @@
     list-style-type: none;
   }
   .main-header .burger-menu ul li a {
-    color: rgba(20, 19, 20, 0.9803921569);
+    color: rgba(6, 5, 6, 0.768627451);
     user-select: none;
     text-transform: capitalize;
     font-family: "Bold";
